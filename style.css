@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 100% arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dd {
+    font-size: 1.25em;
+}
+
+dt, p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.header {
+    padding: 0.5em;
+}
+
+#logo {
+    color: #7fced6;
+    text-shadow: 1px 0.01px #888888;
+    font-size: 2.25em;
+    font-weight: normal;
+    margin: .25em;
+    margin-top: .45em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5em;
+    border: solid 1px black;
+    font-size: 1em;
+
+    /*arrow styles*/
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.75em;
+      background-repeat: no-repeat;
+
+}
+
+.new-seg {
+    box-shadow: 0px 2px 8px -3px #888888;
+}
+
+#seg-search, #seg-select {
+    padding: .25em 1em 0 1em;
+    width: 30%;
+    min-width: 428px;
+    max-width: 480px; 
+    line-height: 40px;
+    font-size: 16px;
+    border: solid 1px #d9d9d9;
+    display: inline-block;
+    margin: 1em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    height: auto;
+}
+
+input#seg-search:hover {
+    box-shadow: 0px 3px 12px -3px #888888; /*increases shadow of searchbar when pointed*/
+    /*border: solid 1px #000;*/
+    border-radius: 5px;
+    outline: none;
+/*  box-shadow: 0px 3px 12px -3px #d68d7f; increases shadow of searchbar when pointed
+    border: solid 1px #d68d7f;
+    border-radius: 5px;
+    outline: none;*/
+
+}
+
+input#seg-search:active {
+    box-shadow: 0px 3px 12px -3px #888888; /*increases shadow of searchbar when clicked*/
+    /*border: solid 1px #000;*/
+    border-radius: 5px;
+    outline: none;
+}
+
+input#seg-search:focus {
+    box-shadow: 0px 3px 12px -3px #888888; /*increases shadow of searchbar when pointed*/
+    /*border: solid 1px #000;*/
+    border-radius: 5px;
+    outline: none;
+}
+
+
+#trail-name h2 {
+    font-weight: normal;
+    margin: 1.5em 0 .25em 0;
+}
+
+#trail-name p {
+    font-weight: normal;
+    margin: 0 0 1em;
+}
+
+section#segment-name {
+    text-align: left;
+ }
+
+
+#trail-intro-text{
+    display: inline-block; /*Puts trail name and img on same line*/
+    text-align: left;
+    margin: 0em 2em;
+}
+
+
+#segment-name h2 {
+    font-size: 2.5em;
+}
+
+/*section.lights {
+    padding: 1em;
+    clear: both;
+}*/
+
+/*.circle {
+    height: 3.25em;
+    width: 3.25em;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: solid 2px #000;
+    display: inline-block;
+}
+.red {
+    background-color: #927676;
+}
+.yellow {
+    background-color: #a09672;
+}
+.green {
+    background-color: #2dc937;
+}*/
+
+/*Trail Attempt Stats Styles begin*/
+
+.trail-attempts {
+    display: inline-flex;
+    padding: 1em;
+    margin: 0 auto;
+
+}
+
+section.trail-attempts dt {
+    padding-top: 0.25em;
+    padding-left: 2em;
+    display: inline-block;
+    width: 50%;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+section.trail-attempts dd {
+    text-align: center;
+    margin: 0em 1em .25em 1em;
+    padding: .4em .5em .1em .5em;
+    display: inline-block;
+    width: 15%;
+    background-color: #a7a7a7;
+    border-radius: 15px;
+}
+
+dl#attempt-numbers, dl#attempt-times {
+    max-width: 575px;
+    min-width: 554px;
+}
+
+/*Trail info distance, miles, elevation profile, map styles begin*/
+
+.trail-info {
+    margin: 1.5em;
+}
+
+dl#map-stats {
+    min-width: 550px;
+}
+
+section.trail-info dt, section.trail-info dd {
+    display: inline-block;
+    margin-right: .25em ;
+
+}
+
+section.trail-info dd {
+    margin: 0;
+    margin-right: .75em;
+}
+
+/*div#trail-elevation-profile {
+    margin: auto;
+}
+div#trail-map {
+    margin: auto;
+}*/
+
+@media (min-width: 769px)  {
+
+}

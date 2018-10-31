@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>trail pulse</title>
+
+</head>
+
+<body>
+    <section class="header" id="trails">
+
+        <h1 id="logo">trail pulse</h1>
+
+        <span class="select-container">
+            <select id="seg-select">
+                <option value="" disabled="" hidden="">Choose a Trail...</option>
+                <option value="Warren Gulch">Warren Gulch</option>
+                <option value="Green Creek Trail (descent)">Green Creek Trail (descent)</option>
+                <option value="Breck Epic Stage 5 Jelly Arms DH">Breck Epic Stage 5 Jelly Arms DH</option>
+                <option value="Doctor Park DH">Doctor Park DH</option>
+                <option value="BME#2 Kennebec Enduro 2012 Stage 1 Descent">BME#2 Kennebec Enduro 2012 Stage 1 Descent</option>
+                <option value="The Ultimate Ripper !!!">The Ultimate Ripper !!!</option>
+            </select>
+        </span>
+
+        <input placeholder="Strava Segment URL (e.g)" id="seg-search" class="new-seg">  
+
+    </section>
+
+    <main id="trail">
+
+        <section class="trail-intro">
+            <div id="trail-intro-text">
+                <div id="trail-name">
+                    <h2>Doctor Park DH</h2>
+                    <p>Almont, CO</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="attempt-number-section trail-attempts">
+            <dl id="attempt-numbers">
+                <dt>Attempts in the past week</dt>
+                <dd>14</dd>
+                <dt>Attempts in the past month</dt>
+                <dd>2</dd>
+                <dt>Attempts in the past year</dt>
+                <dd>4</dd>
+                <dt>Total Attempts</dt>
+                <dd>352</dd>
+            </dl>
+        </section>
+
+        <section class="segment-time-stats trail-attempts">
+            <dl id="attempt-times">
+                <dt>Fastest Time (KOM)</dt>
+                <dd>23.32</dd>
+                <dt>Top 10 Range (3 Years)</dt>
+                <dd>24 - 28</dd>
+                <dt>Top 10 Range (All Time)</dt>
+                <dd>26 - 29</dd>
+                <dt>Dry Minimum Time</dt>
+                <dd>25.02</dd>
+            </dl>
+        </section>
+
+        <section class="trail-info">
+            <dl id="map-stats">
+                <dt>Distance</dt>
+                <dd>5.78 mi</dd>
+                <dt>Ascent</dt>
+                <dd>124 ft</dd>
+                <dt>Descent</dt>
+                <dd>3013 ft</dd>
+            </dl>
+        </section>
+
+    </main>
+
+    <div id="map" style="width: 500px; height: 380px; visibility: visible; margin: 5px auto; display: none; position: relative;" class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0"></div>
+
+</body>
+
+</html>
